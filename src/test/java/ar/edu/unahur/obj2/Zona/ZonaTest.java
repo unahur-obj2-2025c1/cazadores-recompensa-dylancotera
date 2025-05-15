@@ -32,8 +32,8 @@ public class ZonaTest {
     void habilidadProfugo1(){
         assertEquals(profugo1.getHabilidad(), 40);
         assertEquals(arm1.getHabilidad(), 80);
-    } }
-/*
+    } 
+
     @Test
     void testGetListaProfugos() {
         assertTrue(zona1.getListaProfugos().isEmpty());
@@ -58,4 +58,3 @@ public class ZonaTest {
         assertTrue(zona1.getListaProfugos().isEmpty());
     }
 }
-*/

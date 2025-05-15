@@ -1,6 +1,7 @@
 package ar.edu.unahur.obj2.Cazadores;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 import ar.edu.unahur.obj2.Profugos.IProfugo;
@@ -44,5 +45,13 @@ public abstract class Cazador {
 
     public Integer getExperiencia() {
         return experiencia;
+    }
+
+    public IProfugo profugoMasHabil(){
+        return profugosCazados.stream().max(Comparator.comparing(IProfugo::getHabilidad)).orElse(null);
+    }
+
+    public Integer cantidadDeCapturas(){
+        return profugosCazados.size();
     }
 }
